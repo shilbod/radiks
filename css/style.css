@@ -1469,6 +1469,7 @@ input[type="submit"] {
   margin-bottom: 20px;
   border-radius: 5px;
   margin-right: 1%;
+  border: 1px solid #badefc;
 }
 
 .catalog-item:nth-child(5n) {
@@ -1512,7 +1513,7 @@ input[type="submit"] {
   font-size: 14px;
   line-height: 1.4;
   font-family: 'Exo 2.0 Semibold', sans-serif;
-  padding: 0 5px;
+  padding: 0 10px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   overflow: hidden;
@@ -1534,11 +1535,11 @@ input[type="submit"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5px;
+  padding: 0px 10px 20px 10px;
 }
 
 .catalog-price {
-  font-size: 20px;
+  font-size: 18px;
   color: #454a4d;
   font-family: 'Exo 2.0 Bold', sans-serif;
   margin-bottom: 3px;
@@ -1547,7 +1548,7 @@ input[type="submit"] {
 .button-about {
   border: 2px solid #0a7fe0;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   font-size: 14px;
   line-height: 1;
   background-color: transparent;
@@ -2483,13 +2484,14 @@ input[type="submit"] {
 }
 
 .menu-large__item {
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   border-left: 1px #abb0b3 solid;
   border-bottom: 1px #abb0b3 solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .menu-large__item:nth-child(1) {
@@ -2497,31 +2499,29 @@ input[type="submit"] {
 }
 
 .menu-large__item:hover {
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .menu-large__item:hover:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-1.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-1.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-1.jpg);
   border-radius: 5px 0 0 0;
 }
 
 .menu-large__item:hover:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-2.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-2.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-2.jpg);
 }
 
 .menu-large__item:hover:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-3.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-3.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-3.jpg);
 }
 
 .menu-large__item:hover:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-3.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-4.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-4.jpg);
   border-radius: 0 5px 0 0;
 }
 
@@ -2589,25 +2589,31 @@ input[type="submit"] {
 }
 
 .tabs__caption .menu-large__item:nth-child(1).active-tab {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-1.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-1.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-1.jpg);
   border-radius: 5px 0 0 0;
 }
 
 .tabs__caption .menu-large__item:nth-child(2).active-tab {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-2.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-2.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-2.jpg);
 }
 
 .tabs__caption .menu-large__item:nth-child(3).active-tab {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-3.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-3.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-3.jpg);
 }
 
 .tabs__caption .menu-large__item:nth-child(4).active-tab {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.8)), to(rgba(45, 48, 50, 0.8))), url(../img/menu-bot-item-3.jpg);
-  background-image: linear-gradient(rgba(45, 48, 50, 0.8), rgba(45, 48, 50, 0.8)), url(../img/menu-bot-item-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 48, 50, 0.7)), to(rgba(45, 48, 50, 0.7))), url(../img/catalog-back-4.jpg);
+  background-image: linear-gradient(rgba(45, 48, 50, 0.7), rgba(45, 48, 50, 0.7)), url(../img/catalog-back-4.jpg);
   border-radius: 0 5px 0 0;
+}
+
+.tabs__caption .menu-large__item.active-tab {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .tabs__caption .menu-large__item.active-tab .menu-large-title {
@@ -3289,7 +3295,7 @@ input[type="submit"] {
   .footer-copy {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    text-align: center;
     font-size: 12px;
     line-height: 16px;
   }
