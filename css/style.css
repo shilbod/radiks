@@ -142,6 +142,7 @@ h1, h2, h3 {
   .section-title {
     font-size: 28px;
     line-height: 1.2;
+    text-align: center;
     font-family: 'Exo 2.0 Semibold', sans-serif;
   }
   .section__title {
@@ -674,7 +675,7 @@ input[type="submit"] {
 
 @media (max-width: 575px) {
   .search-wrap {
-    padding: 5px 5px;
+    padding: 10px 10px;
     width: 100%;
   }
   .searchForm-input-wrap {
@@ -685,17 +686,13 @@ input[type="submit"] {
     font-size: 16px;
   }
   .button-searchForm {
-    font-size: 18px;
-    height: 40px;
+    font-size: 16px;
+    height: 60px;
     width: 25%;
-  }
-  .search-header {
-    border-radius: 0;
   }
   .searchForm-header-button {
     font-size: 16px;
-    height: 50px;
-    border-radius: 0;
+    height: 60px;
   }
 }
 
@@ -1221,7 +1218,8 @@ input[type="submit"] {
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
     margin: 0;
-    background-color: #f7f7f8;
+    background-color: #badefc;
+    padding: 10px 10px;
   }
   .navbar .search-header-icon {
     display: -webkit-box;
@@ -1547,7 +1545,6 @@ input[type="submit"] {
 }
 
 .button-about {
-  height: 30px;
   border: 2px solid #0a7fe0;
   border-radius: 5px;
   padding: 5px 15px;
@@ -1565,11 +1562,6 @@ input[type="submit"] {
   border: 2px solid #0a7fe0;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-}
-
-.button-about-2 {
-  display: inline-block;
-  padding: 11px 32px;
 }
 
 @media (max-width: 1199px) {
@@ -2075,6 +2067,11 @@ input[type="submit"] {
     display: block;
     font-size: 20px;
   }
+  .button-pharmacies {
+    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 1;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2095,9 +2092,6 @@ input[type="submit"] {
   }
   .pharmacies-item__subtitle {
     height: 60px;
-  }
-  .button-pharmacies {
-    padding: 7px 15px;
   }
   .button-pharmacies-bottom-wrap {
     display: -webkit-box;
@@ -2395,6 +2389,10 @@ input[type="submit"] {
   padding: 40px 0;
 }
 
+.map-info__item:first-child {
+  border-right: 1px #abb0b3 solid;
+}
+
 .map-info-title {
   margin-bottom: 10px;
   font-family: 'Exo 2.0 Medium', sans-serif;
@@ -2436,6 +2434,10 @@ input[type="submit"] {
     font-size: 16px;
     text-align: center;
     padding: 20px 0;
+  }
+  .map-info__item:first-child {
+    border-right: none;
+    border-bottom: 1px #abb0b3 solid;
   }
 }
 
