@@ -3461,18 +3461,15 @@ input[type=checkbox]:checked ~ .product-description-arrow:after {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.product-description {
-  padding: 20px 10px;
-}
-
-.product-description-title {
-  font-size: 18px;
-  padding: 15px 0;
-}
-
-.product-description-arrow {
-  margin-top: 20px;
+  .product-description {
+    padding: 20px 10px;
+  }
+  .product-description-title {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  .product-description-arrow {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
