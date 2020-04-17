@@ -110,8 +110,8 @@
               <i class="fas fa-phone fa-2 fa-flip-horizontal"></i>
             </div>
             <div class="navbar__mobile-wrap">
-              <a href="tel:+375447777304" class="navbar__mobile-phone">+375 (44) 7777-304</a>
-              <a href="tel:+375447777436" class="navbar__mobile-phone">+375 (44) 7777-436</a>
+              <a href="tel:+375296375565" class="navbar__mobile-phone">+375 (29) 637-55-65</a>
+              <a href="tel:+375173881991" class="navbar__mobile-phone">+375 (17) 388-19-91</a>
             </div>
           </div>
           <div class="shopping_cart">
@@ -128,7 +128,7 @@
               <div><span>(0)</span></div>
             </a>
           </div>
-          <a class="navbar__button-mobile" href="tel:+375447777304"><i class="fas fa-phone fa-lg fa-flip-horizontal"></i></a>
+          <a class="navbar__button-mobile" href="tel:+375296375565"><i class="fas fa-phone fa-lg fa-flip-horizontal"></i></a>
           <div class="navbar__menu-button">
             <div class="plate plate1" onclick="this.classList.toggle('active')">
               <svg class="burger" version="1.1"  viewBox="0 0 100 100">
@@ -170,8 +170,8 @@
               </li>
             </ul>
             <div class="navbar__mobile-wrap">
-              <a href="tel:+375447777304" class="navbar__mobile-phone">+375 (44) 7777-304</a>
-              <a href="tel:+375447777436" class="navbar__mobile-phone">+375 (44) 7777-436</a>
+              <a href="tel:+375296375565" class="navbar__mobile-phone">+375 (29) 637-55-65</a>
+              <a href="tel:+375173881991" class="navbar__mobile-phone">+375 (17) 388-19-91</a>
             </div>
           </nav>
         </div>
@@ -792,8 +792,8 @@
     <form class="popup-form">
 
       <!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="Транс 7777">
-			<input type="hidden" name="admin_email" value="trans-7777@yandex.by">
+			<input type="hidden" name="project_name" value="">
+			<input type="hidden" name="admin_email" value="">
 			<input type="hidden" name="form_subject" value="Новая заявка (попап)">
 			<!-- END Hidden Required Fields -->
 
@@ -821,8 +821,26 @@
   <script src="js/main.js"></script>
   <script src="js/script-form.js"></script>
   <script>
-    
+    $('.navbar__menu-button').on('click', function(){
+      $('.navbar__nav').slideToggle(400);
+    });
+    });   
 
+    $('.dropdown-menu[data-delay="1"]').on('click', function(){
+      $('.dropdown-menu-mob-list[data-name="1"]').slideToggle(300);
+    });
+    $('.dropdown-menu[data-delay="2"]').on('click', function(){
+      $('.dropdown-menu-mob-list[data-name="2"]').slideToggle(300);
+    });
+    $('.dropdown-menu[data-delay="3"]').on('click', function(){
+      $('.dropdown-menu-mob-list[data-name="3"]').slideToggle(300);
+    });
+    
+    
+    $('.search-header-icon').on('click', function(){
+      $('.search-header').slideToggle(300);
+    });
+   
   </script>
 	<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
